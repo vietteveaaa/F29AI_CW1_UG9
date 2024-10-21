@@ -9,7 +9,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        // Grid 1
+        // Grid 1, hardcoded
         Node root = new Node(new AStarState(0, 0, "S", 5, 2));
         Node goal = new Node(new AStarState(5, 2, "G", 5, 2));
         Node A = addChild(1, 0, "A", 5, 2, root, 1);
@@ -44,7 +44,7 @@ public class Main {
         SearchProblem problem = new SearchProblem(order);
         problem.doSearch(root);
 
-        // Grid 2
+        // Grid 2, hardcoded
         root = new Node(new AStarState(0, 0, "S", 3, 4));
         goal = new Node(new AStarState(3, 4, "G", 3, 4));
         A = addChild(1, 0, "A", 3, 4, root, 1);
